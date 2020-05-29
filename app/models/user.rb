@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   has_many  :visits
+  has_many :stadiums, through: :visits
   has_secure_password
 
   def slug

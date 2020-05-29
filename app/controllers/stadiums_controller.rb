@@ -1,0 +1,3 @@
+class StadiumsController < ApplicationController
+
+end
