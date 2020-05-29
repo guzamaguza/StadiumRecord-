@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Stadium Record</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Stadium Record</h1>
+        <% if logged_in? %>
+          <p>Welcome, <%=current_user.username %>!</p>
+          <table>
+            <tr><a href="/visits/new"> New Stadium Visit </a> </tr>
+            <tr><a href="/visits"> All Visits </a></tr>
+            <tr><a href="/users/<%= current_user.slug %>"> Your Visits </a></tr>
+            <tr><a href="/logout"> Log Out </a><br></tr>
+          </table>
+        <%end %>
+      <%= yield %>
+
+
+    </div>
+  </body>
+</html>
