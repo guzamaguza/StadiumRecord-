@@ -12,12 +12,16 @@
         <% if logged_in? %>
           <p>Welcome, <%=current_user.username %>!</p>
           <table>
-            <tr><a href="/visits/new"> New Stadium Visit </a> </tr>
-            <tr><a href="/visits"> All Visits </a></tr>
-            <tr><a href="/users/<%= current_user.slug %>"> Your Visits </a></tr>
-            <tr><a href="/logout"> Log Out </a><br></tr>
-          </table>
+            <tr>
+              <th><a href="/visits/new"> New Visit Entry </a></th>
+              <th> "      "    </th>
+              <th><a href="/visits"> All Visits </a></th>
+              <th><a href="/users/<%= current_user.slug %>"> Your Visits </a></th>
+              <th><a href="/logout"> Log Out </a><br></th>
+            </tr>
+          <table>
         <%end %>
+
       <%= yield %>
 
 
