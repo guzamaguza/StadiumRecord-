@@ -2,3 +2,11 @@
 <p>Please Login or Sign Up below:</p>
 <a href = '/signup'> Sign Up </a>
 <a href = '/login'> Login </a>
+
+<% Stadium.all.each do |x| %>
+
+  <h2> x.name </h2>
+  <h2> x.location </h2>
+  <h2> x.team </h2>
+
+<% end %>
