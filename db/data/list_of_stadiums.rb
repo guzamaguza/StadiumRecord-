@@ -1,122 +1,124 @@
+
+
 stadium_hash = {
     "Angel Stadium" => {
-      :location => Anaheim CA
+      :location => Anaheim CA,
       :team => Angels
     },
     "Busch Stadium" => {
-      :location => St Louis MO
+      :location => St Louis MO,
       :team => Cardinals
     },
     "Chase Field" => {
-      :location => Phoenix AZ
+      :location => Phoenix AZ,
       :team => Diamondbacks
     },
     "Citi Field" => {
-      :location => Queens NY
+      :location => Queens NY,
       :team => Mets
     },
     "Citizens Bank Park" => {
-      :location => Philadelphia PA
+      :location => Philadelphia PA,
       :team => Phillies
     },
     "Comerica Park" => {
-      :location => Detroit MI
+      :location => Detroit MI,
       :team => Tigers
     },
     "Coors Field" => {
-      :location => Denver CO
+      :location => Denver CO,
       :team => Rockies
     },
     "Dodger Stadium" => {
-      :location => Los Angeles CA
+      :location => Los Angeles CA,
       :team => Dodgers
     },
     "Fenway Park" => {
-      :location => Boston MA
+      :location => Boston MA,
       :team => Red Sox
     },
     "Globe Life Field" => {
-      :location => Arlington TX
+      :location => Arlington TX,
       :team => Rangers
     },
     "Great American Ball Park" => {
-      :location => Cincinnati OH
+      :location => Cincinnati OH,
       :team => Reds
     },
     "Guaranteed Rate Field" => {
-      :location => Chicago IL
+      :location => Chicago IL,
       :team => White Sox
     },
     "Kauffman Stadium" => {
-      :location => Kansas City MO
+      :location => Kansas City MO,
       :team => Royals
     },
     "Marlins Park" => {
-      :location => Miami FL
+      :location => Miami FL,
       :team => Marlins
     },
     "Miller Park" => {
-      :location => Milwaukee WI
+      :location => Milwaukee WI,
       :team => Brewers
     },
     "Minute Maid Park" => {
-      :location => Houston TX
+      :location => Houston TX,
       :team => Astros
     },
     "Nationals Park" => {
-      :location => Washington DC
+      :location => Washington DC,
       :team => Nationals
     },
     "Oakland Coliseum" => {
-      :location => Oakland CA
+      :location => Oakland CA,
       :team => Athletics
     },
     "Oracle Park" => {
-      :location => San Francisco CA
+      :location => San Francisco CA,
       :team => Giants
     },
     "Oriole Park at Camden Yards" => {
-      :location => Baltimore MD
+      :location => Baltimore MD,
       :team => Orioles
     },
     "Petco Park" => {
-      :location => San Diego CA
+      :location => San Diego CA,
       :team => Padres
     },
     "PNC Park" => {
-      :location => Pittsburgh PA
+      :location => Pittsburgh PA,
       :team => Pirates
     },
     "Progressive Field" => {
-      :location => Cleveland OH
+      :location => Cleveland OH,
       :team => Indians
     },
     "Rogers Centre" => {
-      :location => Toronto Ontario
+      :location => Toronto Ontario,
       :team => Blue Jays
     },
     "T-Mobile Park" => {
-      :location => Seattle WA
+      :location => Seattle WA,
       :team => Mariners
     },
     "Target Field" => {
-      :location => Minneapolis MN
+      :location => Minneapolis MN,
       :team => Twins
     },
     "Tropicana Field" => {
-      :location => St Petersburg FL
+      :location => St Petersburg FL,
       :team => Rays
     },
     "Truist Park" => {
-      :location => Cumberland GA
+      :location => Cumberland GA,
       :team => Braves
     },
     "Wrigley Field" => {
-      :location => Chicago IL
+      :location => Chicago IL,
       :team => Cubs
     },
     "Yankee Stadium" => {
-      :location => Bronx NY
+      :location => Bronx NY,
       :team => Yankees
     }
 
