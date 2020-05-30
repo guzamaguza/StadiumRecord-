@@ -10,6 +10,10 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
+    @stadium_hash.each do |key|
+      Stadium.new(key, key.value[0], key.value[1])
+    end
+
     erb :welcome
   end
 
