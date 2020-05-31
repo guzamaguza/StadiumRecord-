@@ -3,44 +3,43 @@
 <a href = '/login'> Login </a><br>
 <a href = '/signup'> Sign Up </a>
 
+<!DOCTYPE html>
 <html>
+
+<head>
 <title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 .mySlides {display:none;}
 </style>
+</head>
+
 <body>
 
-<h2 class="w3-center">Manual Slideshow</h2>
+<h2 class="w3-center">Automatic Slideshow</h2>
 
-<div class="w3-content w3-display-container">
-  <img class="mySlides" src="../css/images/fenwaypark.jpg" style="width:100%">
-  <img class="mySlides" src="../css/images/oraclepark.jpg" style="width:100%">
-  <img class="mySlides" src="../css/images/wrigleyfield.jpg" style="width:100%">
-
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="speaker.jpg" style="width:100%">
+  <img class="mySlides" src="oraclepark.jpg" style="width:100%">
 </div>
 
 <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
+var myIndex = 0;
+carousel();
 
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      x[slideIndex-1].style.display = "block";
-    }
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
 </script>
 
 </body>
