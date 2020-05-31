@@ -14,7 +14,6 @@
           <table>
             <tr>
               <th><a href="/visits/new"> New Visit Entry </a></th>
-              <th> "      "    </th>
               <th><a href="/visits"> All Visits </a></th>
               <th><a href="/users/<%= current_user.slug %>"> Your Visits </a></th>
               <th><a href="/logout"> Log Out </a><br></th>
@@ -22,7 +21,7 @@
           <table>
         <%end %>
 
-      <%= yield %>
+        <%= yield %>
 
 
     </div>
