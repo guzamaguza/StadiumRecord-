@@ -10,14 +10,16 @@ class VisitsController < ApplicationController
 
     get '/visits/new' do
 
-      erb :'/visits/'
+      erb :'/visits/new'
     end
 
     post '/visits/new' do
       #get visit stadium, date, user_id and make a new visit
       @visit = Visit.create(params)
+      #stadium
+      #date
 
-      erb :'/visits'
+      redirect :'/visits'
     end
 
 end

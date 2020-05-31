@@ -1,8 +1,9 @@
 <p>All Stadiums: </p>
 
-<% @user.visits.each do |visit| %>
+<% @stadiums.each do |stadium| %>
     <div>
-        <%= visit.stadium %>
-        <%= visit.date %>
-    </div>
+        <%= stadium.name %>
+        <%= stadium.location %>
+        <%= stadium.team %>
+    </div><br>
 <% end %>
