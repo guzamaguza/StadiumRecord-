@@ -122,10 +122,11 @@ stadium_list = {
 
   }
 
-  stadium_list.each do |stadium, stadium_hash|
-    p = Stadium.new
-    p.stadium = stadium
-    p.location = stadium[:location]
-    p.team = stadium[:team]
+  stadium_list.each do |stadium|
+    name = stadium
+    location = stadium[:location]
+    team = stadium[:team]
+
+    p = Stadium.create(name,location,team)
     p.save
   end
