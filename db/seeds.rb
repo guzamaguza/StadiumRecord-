@@ -1,125 +1,131 @@
-
-
-stadium_hash = {
+stadium_list = {
     "Angel Stadium" => {
-      :location => Anaheim CA
-      :team => Angels
+      :location => "Anaheim CA",
+      :team => "Angels"
     },
     "Busch Stadium" => {
-      :location => St Louis MO
-      :team => Cardinals
+      :location => "St Louis MO",
+      :team => "Cardinals"
     },
     "Chase Field" => {
-      :location => Phoenix AZ
-      :team => Diamondbacks
+      :location => "Phoenix AZ",
+      :team => "Diamondbacks"
     },
     "Citi Field" => {
-      :location => Queens NY
-      :team => Mets
+      :location => "Queens NY",
+      :team => "Mets"
     },
     "Citizens Bank Park" => {
-      :location => Philadelphia PA
-      :team => Phillies
+      :location => "Philadelphia PA",
+      :team => "Phillies"
     },
     "Comerica Park" => {
-      :location => Detroit MI
-      :team => Tigers
+      :location => "Detroit MI",
+      :team => "Tigers"
     },
     "Coors Field" => {
-      :location => Denver CO
-      :team => Rockies
+      :location => "Denver CO",
+      :team => "Rockies"
     },
     "Dodger Stadium" => {
-      :location => Los Angeles CA
-      :team => Dodgers
+      :location => "Los Angeles CA",
+      :team => "Dodgers"
     },
     "Fenway Park" => {
-      :location => Boston MA
-      :team => Red Sox
+      :location => "Boston MA",
+      :team => "Red Sox"
     },
     "Globe Life Field" => {
-      :location => Arlington TX
-      :team => Rangers
+      :location => "Arlington TX",
+      :team => "Rangers"
     },
     "Great American Ball Park" => {
-      :location => Cincinnati OH
-      :team => Reds
+      :location => "Cincinnati OH",
+      :team => "Reds"
     },
     "Guaranteed Rate Field" => {
-      :location => Chicago IL
-      :team => White Sox
+      :location => "Chicago IL",
+      :team => "White Sox"
     },
     "Kauffman Stadium" => {
-      :location => Kansas City MO
-      :team => Royals
+      :location => "Kansas City MO",
+      :team => "Royals"
     },
     "Marlins Park" => {
-      :location => Miami FL
-      :team => Marlins
+      :location => "Miami FL",
+      :team => "Marlins"
     },
     "Miller Park" => {
-      :location => Milwaukee WI
-      :team => Brewers
+      :location => "Milwaukee WI",
+      :team => "Brewers"
     },
     "Minute Maid Park" => {
-      :location => Houston TX
-      :team => Astros
+      :location => "Houston TX",
+      :team => "Astros"
     },
     "Nationals Park" => {
-      :location => Washington DC
-      :team => Nationals
+      :location => "Washington DC",
+      :team => "Nationals"
     },
     "Oakland Coliseum" => {
-      :location => Oakland CA
-      :team => Athletics
+      :location => "Oakland CA",
+      :team => "Athletics"
     },
     "Oracle Park" => {
-      :location => San Francisco CA
-      :team => Giants
+      :location => "San Francisco CA",
+      :team => "Giants"
     },
     "Oriole Park at Camden Yards" => {
-      :location => Baltimore MD
-      :team => Orioles
+      :location => "Baltimore MD",
+      :team => "Orioles"
     },
     "Petco Park" => {
-      :location => San Diego CA
-      :team => Padres
+      :location => "San Diego CA",
+      :team => "Padres"
     },
     "PNC Park" => {
-      :location => Pittsburgh PA
-      :team => Pirates
+      :location => "Pittsburgh PA",
+      :team => "Pirates"
     },
     "Progressive Field" => {
-      :location => Cleveland OH
-      :team => Indians
+      :location => "Cleveland OH",
+      :team => "Indians"
     },
     "Rogers Centre" => {
-      :location => Toronto Ontario
-      :team => Blue Jays
+      :location => "Toronto Ontario",
+      :team => "Blue Jays"
     },
     "T-Mobile Park" => {
-      :location => Seattle WA
-      :team => Mariners
+      :location => "Seattle WA",
+      :team => "Mariners"
     },
     "Target Field" => {
-      :location => Minneapolis MN
-      :team => Twins
+      :location => "Minneapolis MN",
+      :team => "Twins"
     },
     "Tropicana Field" => {
-      :location => St Petersburg FL
-      :team => Rays
+      :location => "St Petersburg FL",
+      :team => "Rays"
     },
     "Truist Park" => {
-      :location => Cumberland GA
-      :team => Braves
+      :location => "Cumberland GA",
+      :team => "Braves"
     },
     "Wrigley Field" => {
-      :location => Chicago IL
-      :team => Cubs
+      :location => "Chicago IL",
+      :team => "Cubs"
     },
     "Yankee Stadium" => {
-      :location => Bronx NY
-      :team => Yankees
+      :location => "Bronx NY",
+      :team => "Yankees"
     }
 
   }
+
+  stadium_list.each do |stadium, stadium_hash|
+    p = Stadium.new
+    p.stadium = stadium
+    p.location = stadium[:location]
+    p.team = stadium[:team]
+    p.save
+  end

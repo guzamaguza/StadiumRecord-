@@ -1,5 +1,3 @@
-
-
 stadium_hash = {
     "Angel Stadium" => {
       :location => Anaheim CA,
