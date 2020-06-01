@@ -123,10 +123,10 @@ stadium_list = {
   }
 
   stadium_list.each do |stadium|
-    name = stadium
-    location = stadium[:location]
-    team = stadium[:team]
+    name = stadium.to_s
+    location = stadium[:location].to_s
+    team = stadium[:team].to_s
 
-    p = Stadium.create(name,location,team)
+    p = Stadium.create(:name,:location,:team)
     p.save
   end
