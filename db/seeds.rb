@@ -1,3 +1,4 @@
+
 stadium_list = {
     "Angel Stadium" => {
       :location => "Anaheim CA",
@@ -122,11 +123,12 @@ stadium_list = {
 
   }
 
-  stadium_list.each do |stadium|
-    name = stadium.to_s
-    location = stadium[:location].to_s
-    team = stadium[:team].to_s
 
-    p = Stadium.create(:name,:location,:team)
-    p.save
+stadium_list.each do |stadium, stadium_hash|
+  p = Stadium.new
+  p.name = stadium
+  stadium_hash.each do |attribute, value|
+      p[attribute] = value
   end
+  p.save
+end
