@@ -3,6 +3,7 @@
 class Stadium < ActiveRecord::Base
   belongs_to  :visits
 
+=begin
   @stadium_hash = {
       "Angel Stadium" => {
         :location => "Anaheim CA",
@@ -136,5 +137,6 @@ class Stadium < ActiveRecord::Base
       end
       p.save
   end
+=end
 
 end
