@@ -3,6 +3,10 @@
 class Stadium < ActiveRecord::Base
   belongs_to  :visits
 
+  def initialize(name)
+    @name = name 
+  end
+
 =begin
   @stadium_hash = {
       "Angel Stadium" => {

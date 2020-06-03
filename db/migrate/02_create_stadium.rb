@@ -1,6 +1,6 @@
-class CreateStadiums < ActiveRecord::Migration[6.0]
+class CreateStadium < ActiveRecord::Migration[6.0]
   def change
-    create_table :stadiums do |t|
+    create_table :stadium do |t|
       t.string :name
       t.string :location
       t.string :team
