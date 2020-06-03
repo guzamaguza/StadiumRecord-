@@ -2,6 +2,20 @@ class StadiumsController < ApplicationController
 
     get '/stadiums' do
 
+      @stadiums = {
+          :Angel_Stadium => {
+            :name => "Angel Stadium",
+            :location => "Anaheim CA",
+            :team => "Angels"
+          },
+          :Busch_Stadium => {
+            :name => "Busch Stadium",
+            :location => "St Louis MO",
+            :team => "Cardinals"
+          }
+        }
+
+=begin
       stadium_list = {}
       stadium_list = {
           :Angel_Stadium => {
@@ -19,8 +33,8 @@ class StadiumsController < ApplicationController
           p.name = stadium
           p.save
         end
-
-      @stadiums = Stadium.all
+=end
+      #@stadiums = Stadium.all
       erb :'/stadiums/index'
 
     end

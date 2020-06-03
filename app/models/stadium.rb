@@ -3,9 +3,7 @@
 class Stadium < ActiveRecord::Base
   belongs_to  :visits
 
-  def initialize(name)
-    @name = name 
-  end
+end
 
 =begin
   @stadium_hash = {
@@ -142,5 +140,3 @@ class Stadium < ActiveRecord::Base
       p.save
   end
 =end
-
-end
