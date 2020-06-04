@@ -3,152 +3,152 @@ class StadiumsController < ApplicationController
     get '/stadiums' do
 
       @stadiums = {
-        "Angel Stadium" => {
+        "Angel_Stadium" => {
           :name => "Angel Stadium",
           :location => "Anaheim CA",
           :team => "Angels"
         },
-        "Busch Stadium" => {
+        "Busch_Stadium" => {
           :name => "Busch Stadium",
           :location => "St Louis MO",
           :team => "Cardinals"
         },
-        "Chase Field" => {
+        "Chase_Field" => {
           :name => "Chase Field",
           :location => "Phoenix AZ",
           :team => "Diamondbacks"
         },
-        "Citi Field" => {
+        "Citi_Field" => {
           :name => "Citi Field",
           :location => "Queens NY",
           :team => "Mets"
         },
-        "Citizens Bank Park" => {
+        "Citizens_Bank_Park" => {
           :name => "Citizens Bank Park",
           :location => "Philadelphia PA",
           :team => "Phillies"
         },
-        "Comerica Park" => {
+        "Comerica_Park" => {
           :name => "Comerica Park",
           :location => "Detroit MI",
           :team => "Tigers"
         },
-        "Coors Field" => {
+        "Coors_Field" => {
           :name => "Coors Field",
           :location => "Denver CO",
           :team => "Rockies"
         },
-        "Dodger Stadium" => {
+        "Dodger_Stadium" => {
           :name => "Dodger Stadium",
           :location => "Los Angeles CA",
           :team => "Dodgers"
         },
-        "Fenway Park" => {
+        "Fenway_Park" => {
           :name => "Fenway Park",
           :location => "Boston MA",
           :team => "Red Sox"
         },
-        "Globe Life Field" => {
+        "Globe_Life_Field" => {
           :name => "Globe Life Field",
           :location => "Arlington TX",
           :team => "Rangers"
         },
-        "Great American Ball Park" => {
+        "Great_American_Ball_Park" => {
           :name => "Great American Ball Park",
           :location => "Cincinnati OH",
           :team => "Reds"
         },
-        "Guaranteed Rate Field" => {
+        "Guaranteed_Rate_Field" => {
           :name => "Guaranteed Rate Field",
           :location => "Chicago IL",
           :team => "White Sox"
         },
-        "Kauffman Stadium" => {
+        "Kauffman_Stadium" => {
           :name => "Kauffman Stadium",
           :location => "Kansas City MO",
           :team => "Royals"
         },
-        "Marlins Park" => {
+        "Marlins_Park" => {
           :name => "Marlins Park",
           :location => "Miami FL",
           :team => "Marlins"
         },
-        "Miller Park" => {
+        "Miller_Park" => {
           :name => "Miller Park",
           :location => "Milwaukee WI",
           :team => "Brewers"
         },
-        "Minute Maid Park" => {
+        "Minute_Maid_Park" => {
           :name => "Minute Maid Park",
           :location => "Houston TX",
           :team => "Astros"
         },
-        "Nationals Park" => {
+        "Nationals_Park" => {
           :name => "Nationals Park",
           :location => "Washington DC",
           :team => "Nationals"
         },
-        "Oakland Coliseum" => {
+        "Oakland_Coliseum" => {
           :name => "Oakland Coliseum",
           :location => "Oakland CA",
           :team => "Athletics"
         },
-        "Oracle Park" => {
+        "Oracle_Park" => {
           :name => "Oracle Park",
           :location => "San Francisco CA",
           :team => "Giants"
         },
-        "Oriole Park at Camden Yards" => {
+        "Oriole_Park_at_Camden_Yards" => {
           :name => "Oriole Park at Camden Yards",
           :location => "Baltimore MD",
           :team => "Orioles"
         },
-        "Petco Park" => {
+        "Petco_Park" => {
           :name => "Petco Park",
           :location => "San Diego CA",
           :team => "Padres"
         },
-        "PNC Park" => {
+        "PNC_Park" => {
           :name => "PNC Park",
           :location => "Pittsburgh PA",
           :team => "Pirates"
         },
-        "Progressive Field" => {
+        "Progressive_Field" => {
           :name => "Progressive Field",
           :location => "Cleveland OH",
           :team => "Indians"
         },
-        "Rogers Centre" => {
+        "Rogers_Centre" => {
           :name => "Rogers Centre",
           :location => "Toronto Ontario",
           :team => "Blue Jays"
         },
-        "T-Mobile Park" => {
+        "T-Mobile_Park" => {
           :name => "T-Mobile Park",
           :location => "Seattle WA",
           :team => "Mariners"
         },
-        "Target Field" => {
+        "Target_Field" => {
           :name => "Target Field",
           :location => "Minneapolis MN",
           :team => "Twins"
         },
-        "Tropicana Field" => {
+        "Tropicana_Field" => {
           :name => "Tropicana Field",
           :location => "St Petersburg FL",
           :team => "Rays"
         },
-        "Truist Park" => {
+        "Truist_Park" => {
           :name => "Truist Park",
           :location => "Cumberland GA",
           :team => "Braves"
         },
-        "Wrigley Field" => {
+        "Wrigley_Field" => {
           :name => "Wrigley Field",
           :location => "Chicago IL",
           :team => "Cubs"
         },
-        "Yankee Stadium" => {
+        "Yankee_Stadium" => {
           :name => "Yankee Stadium",
           :location => "Bronx NY",
           :team => "Yankees"
@@ -156,7 +156,6 @@ class StadiumsController < ApplicationController
   }
 
       erb :'/stadiums/index'
-
     end
 
 end
